@@ -1,0 +1,218 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  font-size: 1.25rem;
+  min-height: 3rem;
+  background-color: black;
+  color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  margin-top: 1.5rem;
+}
+
+.input {
+  width: 40%;
+  font-size: 1.75rem;
+  height: 2.75rem;
+  border-radius: 10px 0 0 10px;
+  padding-left: 0.5rem;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+
+.btnInput {
+  font-size: 1.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0 10px 10px 0;
+  background-color: darkgreen;
+  color: white;
+}
+
+.btnInput:hover {
+  color: lightgray;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+hr {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  width: 100%;
+}
+
+.container {
+  height: 5rem;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: solid black 0.1rem;
+  border-radius: 10px;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.task {
+  width: 100%;
+  border-bottom: solid lightgray 0.1rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.inputContainer {
+  flex-grow: 1;
+}
+
+.btnContainer {
+  flex: wrap;
+}
+
+.inputTaskLock {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 7.5px 0 0 7.5px;
+  padding-left: 0.4rem;
+  color: black;
+  border: none;
+  flex-grow: 1;
+}
+
+.inputTaskUnlock {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 7.5px 0 0 7.5px;
+  padding-left: 0.4rem;
+  background-color: lightgray;
+  flex-grow: 1;
+}
+
+.btnEdit {
+  font-size: 1.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  color: goldenrod;
+}
+
+.btnEdit:hover {
+  color: darkgoldenrod;
+}
+
+.btnDelete {
+  font-size: 1.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: red;
+  color: white;
+  border-radius: 0 7.5px 7.5px 0;
+}
+
+.btnDelete:hover {
+  color: lightgray;
+  background-color: red;
+}
+
+.task:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.task:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.displayNone {
+  display: none;
+}
+
+@media screen and (max-width: 760px) {
+  .container {
+    width: 380px;
+    margin: auto;
+  }
+
+  .btnContainer {
+    width: 2.5rem;
+  }
+
+  .input {
+    width: 303.99px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .container {
+    width: 350px;
+    margin: auto;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .input {
+    width: 280px;
+  }
+
+  .task {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
