@@ -197,6 +197,14 @@ hr {
   .input {
     width: 303.99px;
   }
+
+  .btnDelete {
+    border-radius: 0 0 7.5px 0;
+  }
+
+  .btnEdit {
+    border-radius: 0 7.5px 0 0;
+  }
 }
 
 @media screen and (max-width: 468px) {
